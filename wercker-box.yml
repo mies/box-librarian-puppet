@@ -1,6 +1,6 @@
 name: librarian-puppet
 inherits: wercker/ubuntu12.04-ruby2.0.0@0.1.5
-version: 0.0.1
+version: 0.0.2
 description: Box for installing Puppet manifests and modules using Librarian
 type: main
 platform: ubuntu@12.04
@@ -8,4 +8,5 @@ packages:
   - ruby@2.0.0
   - librarian-puppet@0.9.9
 script:
+  sudo gem install puppet
   sudo gem install librarian-puppet
