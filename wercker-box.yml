@@ -7,6 +7,6 @@ platform: ubuntu@12.04
 packages:
   - ruby@2.0.0
   - librarian-puppet@0.9.9
-script:|
+script: |
   sudo gem install puppet
   sudo gem install librarian-puppet
